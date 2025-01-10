@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structures", "..\Structures
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeNodeSolutions", "..\TreeNodeSolutions\TreeNodeSolutions.csproj", "{B68A9756-139F-41EB-A3EA-EFE062BC8916}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingClass", "..\SortingClass\SortingClass.csproj", "{F57CF83E-D365-43C8-8B2E-A5D845FD964E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingClass", "..\SortingClass\SortingClass.csproj", "{F57CF83E-D365-43C8-8B2E-A5D845FD964E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{EB1C1012-6B29-477B-BEDC-B09E37FCDDAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -120,6 +122,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936} = {EB1C1012-6B29-477B-BEDC-B09E37FCDDAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D9E722E-D24A-4E46-8738-2B01601F9A58}
