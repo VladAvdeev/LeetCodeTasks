@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\bin\Debug\net8.0\SlidingWindowSolutions.deps.json
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\bin\Debug\net8.0\SlidingWindowSolutions.dll
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\bin\Debug\net8.0\SlidingWindowSolutions.pdb
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.dll
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\refint\SlidingWindowSolutions.dll
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\SlidingWindowSolutions.pdb
+C:\Users\vavdeev\source\repos\SlidingWindowSolutions\obj\Debug\net8.0\ref\SlidingWindowSolutions.dll
