@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArrayTasks\ArrayTasks.csproj" />
+    <ProjectReference Include="..\BinarySearchSolutions\BinarySearchSolutions.csproj" />
+    <ProjectReference Include="..\BitManipulation\BitManipulation.csproj" />
+    <ProjectReference Include="..\DynamicProgramming\DynamicProgramming.csproj" />
+    <ProjectReference Include="..\GreedySolutions\GreedySolutions.csproj" />
+    <ProjectReference Include="..\HashTableSolutions\HashTableSolutions.csproj" />
+    <ProjectReference Include="..\IntervalsSolution\IntervalsSolution.csproj" />
+    <ProjectReference Include="..\LinkedList\LinkedList.csproj" />
+    <ProjectReference Include="..\MathSolutions\MathSolutions.csproj" />
+    <ProjectReference Include="..\PrefixSum\PrefixSum.csproj" />
+    <ProjectReference Include="..\SlidingWindowSolutions\SlidingWindowSolutions.csproj" />
+    <ProjectReference Include="..\StackSolutions\StackSolutions.csproj" />
+    <ProjectReference Include="..\StringSol\StringSol.csproj" />
+    <ProjectReference Include="..\TwoPointers\TwoPointers.csproj" />
+  </ItemGroup>
+
+</Project>
