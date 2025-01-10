@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\Structures\bin\Debug\net8.0\Structures.deps.json
+C:\Users\vavdeev\source\repos\Structures\bin\Debug\net8.0\Structures.dll
+C:\Users\vavdeev\source\repos\Structures\bin\Debug\net8.0\Structures.pdb
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.dll
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\refint\Structures.dll
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\Structures.pdb
+C:\Users\vavdeev\source\repos\Structures\obj\Debug\net8.0\ref\Structures.dll

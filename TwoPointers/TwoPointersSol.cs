@@ -1,0 +1,302 @@
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.ExceptionServices;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace TwoPointers
+{
+    public class TwoPointersSol
+    {
+        public void Merge(int[] nums1, int m, int[] nums2, int n)
+        {
+            // последние элементы массивов
+            int pointer1 = m - 1;
+            int pointer2 = n - 1;
+
+            // с конца проходим по массиву num1
+            for (int i = nums1.Length - 1; i >= 0; i--)
+            {
+                // поинтеры будут понижаться и в моменте один из них может стать -1
+                // это означает, что элементы закончились и мы прошлись по всем элементам
+                if(pointer1 >= 0 && pointer2 >= 0)
+                {
+                    // начинаем с конца и сравниваем последние элементы двух массивов
+                    // если с поинтера 1 больше, то в конце записываем это же число 
+                    if (nums1[pointer1] > nums2[pointer2])
+                    {
+                        nums1[i] = nums1[pointer1];
+                        pointer1--;
+                    }
+                    // иначе из numn2
+                    else
+                    {
+                        nums1[i] = nums2[pointer2];
+                        pointer2--;
+                    }
+                }
+                // в моменте один из поинтеров станет меньше 0, нужно продолжать обработку оставшегося массива
+                else if(pointer1 >= 0)
+                {
+                    nums1[i] = nums1[pointer1];
+                    pointer1--;
+                }
+                else if(pointer2 >= 0)
+                {
+                    nums1[i] = nums2[pointer2];
+                    pointer2--;
+                }
+            }
+        }
+        public int LengthOfLongestSubstring(string s)
+        {
+            int left = 0;
+            int maxLength = 0;
+            HashSet<char> charSet = new HashSet<char>();
+            for(int right = 0;  right < s.Length; right++)
+            {
+                while (charSet.Contains(s[right]))
+                {
+                    var leftChar = s[left];
+                    charSet.Remove(leftChar);
+                    left++;
+                }
+                charSet.Add(s[right]);
+                
+                maxLength = Math.Max(right - left + 1,maxLength);
+            }
+            return maxLength;
+        }
+        public bool IsSubSequence(string s, string t)
+        {
+            int leftCount = 0;
+            int rightCount = 0;
+
+            while (leftCount < s.Length && rightCount < t.Length)
+            {
+                if (s[leftCount] == t[rightCount])
+                {
+                    leftCount++;
+                }
+                rightCount++;
+            }
+            return leftCount == s.Length;
+        }
+        public bool IsPalindrome(string s)
+        {
+            var res = s.ToLower().Where(x => char.IsAsciiLetterOrDigit(x)).ToString();
+            return res.Reverse().SequenceEqual(res);
+            
+        }
+        public bool ContainsNearbyDuplicate(int[] nums, int k)
+        {
+            // Словарь для хранения последнего индекса каждого элемента
+            Dictionary<int, int> hashSet = new Dictionary<int, int>();
+            for(int i = 0; i < nums.Length; i++)
+            {
+                // Если элемент уже есть в словаре
+                if (hashSet.ContainsKey(nums[i]))
+                {
+                    // Проверяем, удовлетворяет ли разница индексов условию
+                    if (Math.Abs(i - hashSet[nums[i]]) <= k)
+                        return true;
+                }
+                // Обновляем или добавляем текущий элемент в словарь
+                hashSet[nums[i]] = i;   
+            }
+            string s = "";
+            // Если не найдено ни одной пары, возвращаем false
+            return false;
+        }
+        public void MoveZeroes(int[] nums)
+        {
+            int lastZeroIndex = 0;
+            for(int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    (nums[lastZeroIndex], nums[i]) = (nums[i], nums[lastZeroIndex]);
+                    lastZeroIndex++;
+                }
+            }
+        }
+        public int RemoveDuplicates2(int[] nums)
+        {
+            if (nums.Length <= 2)
+                return nums.Length;
+
+            int writeIndex = 2; // индекс, куда записываем элемент
+
+            for(int i =2; i < nums.Length; i++)
+            {
+                if(nums[i] != nums[writeIndex - 2])
+                {
+                    nums[writeIndex] = nums[i];
+                    writeIndex++;
+                }
+            }
+            return writeIndex;
+                
+        }
+        public void RotateArray(int[] nums, int k)
+        {
+            int n = nums.Length;
+            k %= n; // Если k больше длины массива, берем остаток от деления
+
+            // Шаг 1: Разворачиваем весь массив
+            Reverse(nums, 0, n - 1);
+            // Шаг 2: Разворачиваем первые k элементов
+            Reverse(nums, 0, k - 1);
+            // Шаг 3: Разворачиваем оставшиеся элементы
+            Reverse(nums, k, n - 1);
+        }
+        private void Reverse(int[] nums, int start, int end)
+        {
+            while(start < end)
+            {
+                var temp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = temp;
+                start++;
+                end--;
+            }
+        }
+        public string MergeAlternately(string word1, string word2)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            int maxLength = Math.Max(word1.Length, word2.Length);
+            for(int i = 0; i < maxLength; i++)
+            {
+                if(i < word1.Length)
+                {
+                    stringBuilder.Append(word1[i]);
+                }
+                if(i < word2.Length)
+                {
+                    stringBuilder.Append(word2[i]);
+                }
+            }
+            return stringBuilder.ToString();
+        }
+        public string ReverseWords(string s)
+        {
+            var stringArray = s.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            int start = 0;
+            int end = stringArray.Length - 1;
+
+            while(start < end)
+            {
+                var temp = stringArray[start];
+                stringArray[start] = stringArray[end];
+                stringArray[end] = temp;
+                start++;
+                end--;
+            }
+            return String.Join(" ", stringArray);
+        }
+        public string LongestPalindromeSubstring(string s)
+        {
+
+            if (string.IsNullOrEmpty(s)) return "";
+
+            int start = 0;
+            int maxLength = 0;
+
+            for(int i = 0; i <s.Length;i++)
+            {
+                // Расширение от центра (для нечетного палиндрома)
+                int length1 = ExpandFromCenter(s, i, i);
+                // Расширение от центра (для четного палиндрома)
+                int length2 = ExpandFromCenter(s, i, i + 1);
+
+                int lengthCompare = Math.Max(length1, length2);
+
+                if(lengthCompare > maxLength)
+                {
+                    maxLength = lengthCompare;
+                    start = i - (lengthCompare - 1) / 2; // Начальный индекс палиндрома
+                }
+            }
+            return s.Substring(start, maxLength);
+        }
+        private int ExpandFromCenter(string s, int left, int right)
+        {
+            while(left >= 0 && right < s.Length && s[left] == s[right])
+            {
+                left--;
+                right++;
+            }
+            return right - left - 1;// Длина палиндрома 
+        }
+        // переместить только гласные
+        public string ReverseVowels(string s)
+        {
+            string vowels = "aeiouAEIOU";
+            var charArray = s.ToCharArray();    
+            int start = 0;
+            int end = s.Length - 1;
+            while(start < end)
+            {
+                if (vowels.Contains(charArray[start]) && vowels.Contains(charArray[end]))
+                {
+                    var temp = charArray[start];
+                    charArray[start] = charArray[end];
+                    charArray[end] = temp;
+                    start++;
+                    end--;
+                }
+                // Если только левый символ не гласный, двигаем указатель вправо
+                else if (!vowels.Contains(charArray[start]))
+                {
+                   start++;
+                }
+                // Если только правый символ не гласный, двигаем указатель влево
+                else if(!vowels.Contains(charArray[end]))
+                {
+                    end--;
+                }
+            }
+            return new string(charArray);
+        }
+        public IList<IList<int>> ThreeSum(int[] nums)
+        {
+            Array.Sort(nums);
+            var result = new List<IList<int>>();
+
+            // отсчет ведем до 3 элемента с конца
+            for(int i = 0; i < nums.Length - 2; i++)
+            {
+                // Пропускаем дубли для первого элемента
+                if (i > 0 && nums[i] == nums[i - 1])
+                    continue;
+
+                int left = i + 1;
+                int right = nums.Length - 1;
+
+                while(left < right)
+                {
+                    // i!= left; left != right; right != i;
+                    int sum = nums[i] + nums[left] + nums[right];
+
+                    if (sum == 0)
+                    {
+                        result.Add(new List<int> { nums[i], nums[left], nums[right] });
+
+                        // Пропускаем дубли для второго и третьего элементов
+                        while (left < right && nums[left] == nums[left + 1]) left++;
+                        while (left < right && nums[right] == nums[right - 1]) right--;
+
+                        // Сдвигаем указатели
+                        left++;
+                        right--;
+                    }
+                    else if (sum < 0)
+                        left++;// Увеличиваем левый указатель, чтобы увеличить сумму
+                    else
+                        right--;// Уменьшаем правый указатель, чтобы уменьшить сумму
+                }
+            }
+            return result;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\bin\Debug\net8.0\TreeNodeSolutions.deps.json
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\bin\Debug\net8.0\TreeNodeSolutions.dll
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\bin\Debug\net8.0\TreeNodeSolutions.pdb
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.dll
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\refint\TreeNodeSolutions.dll
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\TreeNodeSolutions.pdb
+C:\Users\vavdeev\source\repos\TreeNodeSolutions\obj\Debug\net8.0\ref\TreeNodeSolutions.dll
