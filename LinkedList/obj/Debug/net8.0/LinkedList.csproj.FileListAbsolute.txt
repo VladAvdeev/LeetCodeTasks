@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\LinkedList\bin\Debug\net8.0\LinkedList.deps.json
+C:\Users\vavdeev\source\repos\LinkedList\bin\Debug\net8.0\LinkedList.dll
+C:\Users\vavdeev\source\repos\LinkedList\bin\Debug\net8.0\LinkedList.pdb
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.dll
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\refint\LinkedList.dll
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\LinkedList.pdb
+C:\Users\vavdeev\source\repos\LinkedList\obj\Debug\net8.0\ref\LinkedList.dll

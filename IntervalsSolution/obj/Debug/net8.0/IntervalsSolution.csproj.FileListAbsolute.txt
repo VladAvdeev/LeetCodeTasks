@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\IntervalsSolution\bin\Debug\net8.0\IntervalsSolution.deps.json
+C:\Users\vavdeev\source\repos\IntervalsSolution\bin\Debug\net8.0\IntervalsSolution.dll
+C:\Users\vavdeev\source\repos\IntervalsSolution\bin\Debug\net8.0\IntervalsSolution.pdb
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.dll
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\refint\IntervalsSolution.dll
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\IntervalsSolution.pdb
+C:\Users\vavdeev\source\repos\IntervalsSolution\obj\Debug\net8.0\ref\IntervalsSolution.dll
