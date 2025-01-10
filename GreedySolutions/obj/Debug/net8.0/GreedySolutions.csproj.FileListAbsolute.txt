@@ -1,0 +1,11 @@
+C:\Users\vavdeev\source\repos\GreedySolutions\bin\Debug\net8.0\GreedySolutions.deps.json
+C:\Users\vavdeev\source\repos\GreedySolutions\bin\Debug\net8.0\GreedySolutions.dll
+C:\Users\vavdeev\source\repos\GreedySolutions\bin\Debug\net8.0\GreedySolutions.pdb
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.AssemblyInfoInputs.cache
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.AssemblyInfo.cs
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.csproj.CoreCompileInputs.cache
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.dll
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\refint\GreedySolutions.dll
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\GreedySolutions.pdb
+C:\Users\vavdeev\source\repos\GreedySolutions\obj\Debug\net8.0\ref\GreedySolutions.dll
