@@ -88,6 +88,9 @@ bitManipulation.ReverseBits(n);
 
 //string word1 = "abc", word2 = "pqr";
 //twoPointersSol.MergeAlternately(word1, word2);
+string s = "ABAB";
+int k = 2;
+slidingWindowSolution.CharacterReplacement(s, k);
 
 //int[] nums1 = [1, 2, 3, 0, 0, 0];
 //int m = 3;

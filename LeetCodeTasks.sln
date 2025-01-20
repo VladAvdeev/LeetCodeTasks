@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeTasks", "LeetCodeTa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoPointers", "..\TwoPointers\TwoPointers.csproj", "{C6B47830-193D-4A2F-B919-E74C751433D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayTasks", "..\ArrayTasks\ArrayTasks.csproj", "{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringSol", "..\StringSol\StringSol.csproj", "{D5BD755A-AF39-4CC9-B33B-26030AAE9FAA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSolutions", "..\MathSolutions\MathSolutions.csproj", "{85F29D85-D5FD-4206-BDFE-407187321F1C}"
@@ -39,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeNodeSolutions", "..\Tre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingClass", "..\SortingClass\SortingClass.csproj", "{F57CF83E-D365-43C8-8B2E-A5D845FD964E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{EB1C1012-6B29-477B-BEDC-B09E37FCDDAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayTasks", "..\ArrayTasks\ArrayTasks.csproj", "{259C3222-4871-4B80-BE08-FC8C091A5D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +53,6 @@ Global
 		{C6B47830-193D-4A2F-B919-E74C751433D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6B47830-193D-4A2F-B919-E74C751433D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6B47830-193D-4A2F-B919-E74C751433D6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5BD755A-AF39-4CC9-B33B-26030AAE9FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5BD755A-AF39-4CC9-B33B-26030AAE9FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5BD755A-AF39-4CC9-B33B-26030AAE9FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -119,12 +113,13 @@ Global
 		{F57CF83E-D365-43C8-8B2E-A5D845FD964E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F57CF83E-D365-43C8-8B2E-A5D845FD964E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F57CF83E-D365-43C8-8B2E-A5D845FD964E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{259C3222-4871-4B80-BE08-FC8C091A5D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259C3222-4871-4B80-BE08-FC8C091A5D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259C3222-4871-4B80-BE08-FC8C091A5D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259C3222-4871-4B80-BE08-FC8C091A5D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{3B5CFBC7-D5CB-4FFD-90A3-8500ABFCA936} = {EB1C1012-6B29-477B-BEDC-B09E37FCDDAD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D9E722E-D24A-4E46-8738-2B01601F9A58}
