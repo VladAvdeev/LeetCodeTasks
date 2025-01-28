@@ -5,6 +5,7 @@ using DynamicProgramming;
 using GreedySolutions;
 using HashTableSolutions;
 using IntervalsSolution;
+using LeetCodeTasks;
 using LinkedList;
 using MathSolutions;
 using PrefixSum;
@@ -27,7 +28,7 @@ PrefixSumSolution prefixSumSolution = new PrefixSumSolution();
 IntervalSolution intervalSolution = new IntervalSolution();
 StackSolution stackSolution = new StackSolution();
 BitManipulationSolution bitManipulation = new BitManipulationSolution();
-
+BacktrackingClass backtrackingClass = new BacktrackingClass();
 
 uint n = 0x0293F46C;
 bitManipulation.ReverseBits(n);
@@ -88,9 +89,17 @@ bitManipulation.ReverseBits(n);
 
 //string word1 = "abc", word2 = "pqr";
 //twoPointersSol.MergeAlternately(word1, word2);
-string s = "ABAB";
-int k = 2;
-slidingWindowSolution.CharacterReplacement(s, k);
+//string s = "ABAB";
+//int k = 2;
+//slidingWindowSolution.CharacterReplacement(s, k);
+
+//int q = 3;
+//backtrackingClass.GenerateParenthesis(q);
+
+int[] nums = [1000000000, 1000000000, 1000000000, 1000000000];
+int target = -294967296;
+
+twoPointersSol.FourSum(nums, target);
 
 //int[] nums1 = [1, 2, 3, 0, 0, 0];
 //int m = 3;
