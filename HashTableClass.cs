@@ -226,7 +226,82 @@ namespace LeetCodeTasks
             return result;
 
         }
+        public IList<IList<int>> FindDifferenceNums(int[] nums1, int[] nums2)
+        {
+            var result = new List<IList<int>>();
+            var numsSet1 = new HashSet<int>(nums1);
+            var numsSet2 = new HashSet<int>(nums2);
 
+            var result1 = numsSet1.Except(numsSet2);
+            var result2 = numsSet2.Except(numsSet1);
 
+            result.Add(new List<int>(result1));
+            result.Add(new List<int>(result2));
+
+            return result;
+        }
+        public bool UniqueOccurrences(int[] arr)
+        {
+            Dictionary<int, int> counts = new Dictionary<int, int>();
+            foreach (int i in arr)
+            {
+                if (counts.ContainsKey(i))
+                    counts[i]++;
+                else
+                    counts[i] = 1;
+
+            }
+            HashSet<int> uniqInts = new HashSet<int>();
+            foreach(int nums in counts.Values)
+            {
+                if (!uniqInts.Add(nums))
+                    return false;
+            }
+            return true;
+        }
+
+    }
+    public class RandomizedSet
+    {
+        private Dictionary<int, int> randomSetDict; // в словаре ключом будет val, а значение его индекс | словарь для быстрого чтения
+        private List<int> randomList; // лист для быстрой вставки
+        private Random random = new Random();
+        public RandomizedSet()
+        {
+            randomSetDict = new Dictionary<int, int>();
+            randomList = new List<int>();
+        }
+
+        public bool Insert(int val)
+        {
+            if (!randomSetDict.ContainsKey(val))
+            {
+                randomList.Add(val); // добавляем в список элемент
+                randomSetDict[val] = randomList.Count -1; // Записываем индекс последнего добавленного элемента
+                return true;
+            }
+            return false;
+        }
+
+        public bool Remove(int val)
+        {
+            if (randomSetDict.ContainsKey(val)) 
+            {
+                int indexToRemove = randomSetDict[val];// находим индекс удаляемого значения
+                int lastElement = randomList[^1]; // то же самое что и randomList[randomList.Count - 1];
+                randomList[indexToRemove] = lastElement; // перетаскиваем последний элемент на индекс удаляемого
+                randomSetDict[lastElement] = indexToRemove; // обновляем индекс перемещенного элемента в словаре 
+                randomList.RemoveAt(randomList.Count - 1); // так как элемент стал в конце, то удаляем его с конца
+                randomSetDict.Remove(indexToRemove);
+                return true;
+            }
+            return false;
+        }
+
+        public int GetRandom()
+        {
+            return randomList[random.Next(0, randomList.Count)];
+             
+        }
     }
 }

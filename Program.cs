@@ -30,6 +30,11 @@ StackSolution stackSolution = new StackSolution();
 BitManipulationSolution bitManipulation = new BitManipulationSolution();
 BacktrackingClass backtrackingClass = new BacktrackingClass();
 
+int[] nums1 = [1, 2, 2, 1, 1, 3];
+int[] nums2 = [2, 4, 6];
+//hashTableSolution.FindDifferenceNums(nums1, nums2);
+hashTableSolution.UniqueOccurrences(nums1);
+
 uint n = 0x0293F46C;
 bitManipulation.ReverseBits(n);
 //string input = "/home//foo/";
