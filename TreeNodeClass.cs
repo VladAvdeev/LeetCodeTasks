@@ -201,6 +201,36 @@ namespace LeetCodeTasks
             }
             return height;
         }
+        // визуализация деревьев(куда ведут пути)
+        public IList<string> BinaryTreePath(TreeNode root)
+        {
+            var result = new List<string>();
+            
+            if (root == null)
+                return result;
+            
+            DFS(root, "", result);
+
+            return result;
+        }
+        private void DFS(TreeNode root, string path, List<string> result)
+        {
+            //если path null, то берем root.value
+            if (string.IsNullOrEmpty(path))
+                path = root.val.ToString();
+
+            else
+                path += "->" + root.val;
+
+            if (root.left == null && root.right == null)
+            {
+                result.Add(path);
+                return;
+            }
+            if (root.left != null) DFS(root.left, path, result);
+            if (root.right != null) DFS(root.right, path, result);
+        }
+
     }
     public class TreeNode
     {

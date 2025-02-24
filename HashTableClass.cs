@@ -259,6 +259,7 @@ namespace LeetCodeTasks
             }
             return true;
         }
+        
 
     }
     public class RandomizedSet
@@ -303,5 +304,6 @@ namespace LeetCodeTasks
             return randomList[random.Next(0, randomList.Count)];
              
         }
+       
     }
 }

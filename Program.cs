@@ -1,19 +1,5 @@
-﻿using ArrayTasks;
-using BinarySearchSolutions;
-using BitManipulation;
-using DynamicProgramming;
-using GreedySolutions;
-using HashTableSolutions;
-using IntervalsSolution;
-using LeetCodeTasks;
-using LinkedList;
-using MathSolutions;
-using PrefixSum;
-using SlidingWindowSolutions;
-using StackSolutions;
-using StringSol;
-using System.Diagnostics;
-using TwoPointers;
+﻿using LeetCodeTasks;
+
 
 TwoPointersSol twoPointersSol = new TwoPointersSol();
 ArraySol arraySol = new ArraySol();
@@ -30,10 +16,20 @@ StackSolution stackSolution = new StackSolution();
 BitManipulationSolution bitManipulation = new BitManipulationSolution();
 BacktrackingClass backtrackingClass = new BacktrackingClass();
 
+TreeNode root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.right = new TreeNode(3);
+root.left.right = new TreeNode(5);
+
+TreeNodeSolution treeNodeSolution = new TreeNodeSolution();
+treeNodeSolution.BinaryTreePath(root);
+
 int[] nums1 = [1, 2, 2, 1, 1, 3];
 int[] nums2 = [2, 4, 6];
 //hashTableSolution.FindDifferenceNums(nums1, nums2);
 hashTableSolution.UniqueOccurrences(nums1);
+//string s = "abcabcbb";
+//hashTableSolution.LengthOfLongestSubstringRepeat(s);
 
 uint n = 0x0293F46C;
 bitManipulation.ReverseBits(n);
@@ -74,8 +70,8 @@ bitManipulation.ReverseBits(n);
 //hashTableSolution.LongestConsecutive(nums2);
 //greedySolution.CanJump(nums);
 
-//string s = "babad";
-//twoPointersSol.LongestPalindromeSubstring(s);
+string s = "babad";
+twoPointersSol.LongestPalindromeSubstring(s);
 //int[] prices = [7, 1, 5, 3, 6, 4];
 //dynamicProgrammingSolution.MaxProfit(prices);
 //dynamicProgrammingSolution.MaxProfit2(prices);
