@@ -74,7 +74,54 @@ namespace LeetCodeTasks
             }
             return head;
         }
+        public ListNode RemoveNthFromEnd(ListNode head, int n)
+        {
+            // создаем вспомогательный узел перед head
+            ListNode helpNode = new ListNode(0);
+            
+            helpNode.next = head;
+
+            ListNode slow = helpNode;
+            ListNode fast = helpNode;
+
+            // смещаем fast на n позиций
+            for(int i = 0; i <= n; i++)
+            {
+                fast = fast.next;
+            }
+
+            // двигаем оба указателя пока fast не достигнет null, то есть дойдет до конца
+            while(fast != null)
+            {
+                fast = fast.next;
+                slow = slow.next;
+            }
+            // Удаляем нужный узел
+            slow.next = slow.next.next;
+            return helpNode.next;// Возвращаем новую голову списка
+        }
+        public ListNode SwapPairs(ListNode head)
+        {
+            // базовый случай
+            if (head == null || head.next == null)
+            {
+                return head;
+            }
+            // рекурсивный случай 
+            ListNode nextNode = head.next; // второй узел - пара
+            head.next = SwapPairs(nextNode.next);// Рекурсивно меняем следующие пары
+            nextNode.next = head;
+
+            return nextNode;
+        }
     }
+
+
+
+
+
+
+
     public class ListNode
     {
         public int val;

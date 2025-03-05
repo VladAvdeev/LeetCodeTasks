@@ -410,5 +410,41 @@ namespace LeetCodeTasks
             }
             return result;
         }
+        public void NextPermutation(int[] nums)
+        {
+           int n = nums.Length;
+            int i = n - 2;
+
+            // находим первую пару, где n[i] < n[i+1] (двигаясь справа налево)
+            while(i >= 0 && nums[i] >= nums[i + 1])
+            {
+                i--;
+            }
+            // Если нашли такой индекс
+            if (i >= 0)
+            {
+                int j = n - 1;
+
+            // 2. Найти самый маленький элемент справа, который больше nums[i]
+                while (nums[j] <= nums[i])
+                {
+                    j--;
+                }
+                // поменять местами nums[i] и nums[j]
+                (nums[i], nums[j]) = (nums[j], nums[i]);
+
+            }
+            // 4. Развернуть элементы после i, чтобы получить минимальную перестановку
+            ReversePermutation(nums, i + 1, n - 1);
+        }
+        private void ReversePermutation(int[] nums, int left, int right)
+        {
+            while(left < right)
+            {
+                (nums[left], nums[right]) = (nums[right], nums[left]);
+                left++;
+                right--;
+            }
+        }
     }
 }
